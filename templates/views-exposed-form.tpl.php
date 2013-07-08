@@ -29,12 +29,6 @@
 <div class="views-exposed-form">
   <div class="views-exposed-widgets clearfix">
     <?php foreach ($widgets as $id => $widget) : ?>
-<<<<<<< HEAD
-=======
-      <?php if (!empty($widget->prefix)): ?>
-        <?php print $widget->prefix; ?>
-      <?php endif; ?>
->>>>>>> 025d57b402ec35acb5e1c64c74bcc20289518774
       <div id="<?php print $widget->id; ?>-wrapper" class="views-exposed-widget views-widget-<?php print $id; ?>">
         <?php if (!empty($widget->label)): ?>
           <label for="<?php print $widget->id; ?>">
@@ -53,16 +47,8 @@
           <?php print '<div class="advanced-search-button">' . $button . '</div>';
           $advanced = TRUE;
           ?>
-<<<<<<< HEAD
       <?php endif; ?>
       </div>
-=======
-        <?php endif; ?>
-      </div>
-      <?php if (!empty($widget->suffix)): ?>
-        <?php print $widget->suffix; ?>
-      <?php endif; ?>
->>>>>>> 025d57b402ec35acb5e1c64c74bcc20289518774
     <?php endforeach; ?>
       <?php if (!empty($sort_by)): ?>
       <div class="views-exposed-widget views-widget-sort-by">
@@ -83,11 +69,7 @@
       </div>
       <?php endif; ?>
     <div class="views-exposed-widget views-submit-button">
-<<<<<<< HEAD
     <?php if (!$advanced) {
-=======
-    <?php if (!isset($advanced) || $advanced === false) {
->>>>>>> 025d57b402ec35acb5e1c64c74bcc20289518774
       print $button;
     } ?>
     </div>
@@ -98,7 +80,6 @@
 <?php endif; ?>
   </div>
 </div>
-<<<<<<< HEAD
 
 <?php
 /**
@@ -126,5 +107,3 @@ if (arg(0) == "dagsorden-og-referat" || arg(2) == 6) {
   });';
   drupal_add_js($datepicker, array('type' => 'inline', 'scope' => 'footer', 'weight' => 5));
 }
-=======
->>>>>>> 025d57b402ec35acb5e1c64c74bcc20289518774

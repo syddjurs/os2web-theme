@@ -1,12 +1,3 @@
-<<<<<<< HEAD
-=======
-<?php
-/**
- * @file
- * region--menu.tpl.php
- */
-?>
->>>>>>> 025d57b402ec35acb5e1c64c74bcc20289518774
 <div<?php print $attributes; ?>>
   <div<?php print $content_attributes; ?>>
     <?php if ($main_menu || $secondary_menu): ?>

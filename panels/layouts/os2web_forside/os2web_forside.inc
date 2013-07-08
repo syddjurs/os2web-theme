@@ -1,11 +1,4 @@
 <?php
-<<<<<<< HEAD
-=======
-/**
- * @file
- * os2web_forside.inc
- */
->>>>>>> 025d57b402ec35acb5e1c64c74bcc20289518774
 
 /**
  * Implements hook_panels_layouts().
