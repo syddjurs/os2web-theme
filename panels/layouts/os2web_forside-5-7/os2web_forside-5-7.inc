@@ -1,22 +1,19 @@
 <?php
-<<<<<<< HEAD
-=======
 /**
  * @file
- * os2web_forside.inc
+ * os2web_forside-5-7.inc
  */
->>>>>>> 025d57b402ec35acb5e1c64c74bcc20289518774
 
 /**
  * Implements hook_panels_layouts().
  */
 $plugin = array(
-  'title' => t('OS2Web Forside'),
+  'title' => t('OS2Web Forside 5-7'),
   'category' => t('CMS Theme'),
-  'icon' => 'os2web_forside.png',
-  'theme' => 'panels_os2web_forside',
+  'icon' => 'os2web_forside-4-8.png',
+  'theme' => 'panels_os2web_forside-5-7',
   'theme arguments' => array('id', 'content'),
-  'admin css' => 'os2web_forside_admin.css',
+  'admin css' => 'os2web_forside-4-8_admin.css',
   'regions' => array(
     'top_left' => t('Top left'),
     'top_right' => t('Top right'),

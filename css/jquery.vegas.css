@@ -1,5 +1,9 @@
 .vegas-loading {
+<<<<<<< HEAD
 	/* Loading Gif by http://preloaders.net/ 
+=======
+	/* Loading Gif by http://preloaders.net/
+>>>>>>> 025d57b402ec35acb5e1c64c74bcc20289518774
 	-moz-border-radius:10px; -webkit-border-radius:10px; border-radius:10px;
 	background:#000 url(../images/loading.gif) no-repeat center center;
 	background:rgba(0, 0, 0, 0.7) url(images/loading.gif) no-repeat center center;
@@ -7,7 +11,11 @@
 	left:20px;
 	position:fixed;
 	top:20px;
+<<<<<<< HEAD
 	width:32px; 
+=======
+	width:32px;
+>>>>>>> 025d57b402ec35acb5e1c64c74bcc20289518774
 	z-index:0;*/
 }
 
@@ -21,4 +29,8 @@
 	image-rendering: optimizeQuality;
 	-ms-interpolation-mode: bicubic;
 	z-index:-2;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 025d57b402ec35acb5e1c64c74bcc20289518774

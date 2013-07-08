@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 
 /**
  * @file
@@ -9,12 +10,28 @@
  * Alpha comes with a neat solution for keeping this file as clean as possible while the code
  * for your subtheme grows. Please read the README.txt in the /preprocess and /process subfolders
  * for more information on this topic.
+=======
+/**
+ * @file
+ * This file is empty by default because the base theme chain (Alpha & Omega)
+ * provides all the basic functionality. However, in case you wish to customize
+ * the output that Drupal generates through Alpha & Omega this file is a good
+ * place to do so.
+ *
+ * Alpha comes with a neat solution for keeping this file as clean as possible
+ * while the code for your subtheme grows. Please read the README.txt in the
+ * /preprocess and /process subfolders for more information on this topic.
+>>>>>>> 025d57b402ec35acb5e1c64c74bcc20289518774
  */
 
 /**
  * Implements hook_preproces_html().
  */
+<<<<<<< HEAD
 function cmstheme_preprocess_html(&$variables) {
+=======
+function os2web_core_theme_preprocess_html(&$variables) {
+>>>>>>> 025d57b402ec35acb5e1c64c74bcc20289518774
   $theme_path = path_to_theme();
   drupal_add_js($theme_path . '/js/script.js');
   drupal_add_js($theme_path . '/js/jquery.vegas.js');
@@ -25,7 +42,11 @@ function cmstheme_preprocess_html(&$variables) {
 /**
  * Implements hook_menu_link().
  */
+<<<<<<< HEAD
 function cmstheme_menu_link(array $variables) {
+=======
+function os2web_core_theme_menu_link(array $variables) {
+>>>>>>> 025d57b402ec35acb5e1c64c74bcc20289518774
   $element = $variables['element'];
   $sub_menu = '';
 
@@ -45,7 +66,11 @@ function cmstheme_menu_link(array $variables) {
  *
  * tth@bellcom.dk check if there is a better way to do this...
  */
+<<<<<<< HEAD
 function cmstheme_breadcrumb($variables) {
+=======
+function os2web_core_theme_breadcrumb($variables) {
+>>>>>>> 025d57b402ec35acb5e1c64c74bcc20289518774
   $breadcrumb = $variables['breadcrumb'];
 
   $nid = arg(1);
@@ -54,7 +79,11 @@ function cmstheme_breadcrumb($variables) {
   }
 
   if (!empty($breadcrumb)) {
+<<<<<<< HEAD
     $output = '<div class="breadcrumb you-are-here">' . t('Du er her: ') . '</div>';
+=======
+    $output = '<div class="breadcrumb you-are-here">' . t('Du er her:') . '</div>';
+>>>>>>> 025d57b402ec35acb5e1c64c74bcc20289518774
     $title = drupal_get_title();
     $breadcrumb[0] = l(t('Forside'), '<front>', array('attributes' => array('title' => 'Forside')));
     $breadcrumb[] = '<a href="#" title="' . $title . '">' . $title . '</a>';
@@ -67,7 +96,11 @@ function cmstheme_breadcrumb($variables) {
       unset($breadcrumb);
       $breadcrumb[0] = l(t('Forside'), '<front>', array('attributes' => array('title' => 'Forside')));
       $breadcrumb[] = l(t('Politik & planer'), 'politik-og-planer', array('attributes' => array('title' => 'Politik og planer')));
+<<<<<<< HEAD
       $breadcrumb[] = l(t('Søg i dagsordener og referater'), 'meetings-search', array('attributes' => array('title' => 'Søg i dagsordner og referater')));
+=======
+      $breadcrumb[] = l(t('Søg i dagsordener og referater'), 'dagsorden-og-referat', array('attributes' => array('title' => 'Søg i dagsordner og referater')));
+>>>>>>> 025d57b402ec35acb5e1c64c74bcc20289518774
       $breadcrumb[] = l(t($title), '#');
     }
     $output .= '<div class="breadcrumb">' . implode('<div class="bread-crumb"> &gt; </div> ', $breadcrumb) . '</div>';
@@ -78,8 +111,12 @@ function cmstheme_breadcrumb($variables) {
 /**
  * Implements hook_preprocess_region().
  */
+<<<<<<< HEAD
 function cmstheme_preprocess_region(&$vars) {
   global $user;
+=======
+function os2web_core_theme_preprocess_region(&$vars) {
+>>>>>>> 025d57b402ec35acb5e1c64c74bcc20289518774
   if ($vars['region'] === 'sidebar_first') {
     $dirty = FALSE;
     $ignored_blocks = array(
@@ -99,11 +136,17 @@ function cmstheme_preprocess_region(&$vars) {
       }
     }
     if (!$dirty) {
+<<<<<<< HEAD
       $vars['content'] = drupal_render(menu_tree(variable_get('os2web_default_menu', 'navigation')));
+=======
+      $tree = menu_tree(variable_get('os2web_default_menu', 'navigation'));
+      $vars['content'] = drupal_render($tree);
+>>>>>>> 025d57b402ec35acb5e1c64c74bcc20289518774
     }
   }
 }
 
+<<<<<<< HEAD
 /**
  * Implements hook_form_alter().
  *
@@ -121,11 +164,17 @@ function cmstheme_form_alter(&$form, &$form_state, $form_id) {
     $form['to_date']['value']['#date_format'] = 'd-m-Y';
   }
 }
+=======
+>>>>>>> 025d57b402ec35acb5e1c64c74bcc20289518774
 
 /**
  * Implements hook_file_field_item().
  */
+<<<<<<< HEAD
 function cmstheme_filefield_item($file, $field) {
+=======
+function os2web_core_theme_filefield_item($file, $field) {
+>>>>>>> 025d57b402ec35acb5e1c64c74bcc20289518774
   if (filefield_view_access($field['field_name']) && filefield_file_listed($file, $field)) {
     // Default theming.
     return theme('filefield_file', $file);

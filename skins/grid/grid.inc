@@ -1,5 +1,17 @@
 <?php
+<<<<<<< HEAD
 function cmstheme_skinr_skin_grid_info() {
+=======
+/**
+ * @file
+ * grid.inc
+ */
+
+/**
+ * Implements theme_skinr_skin_grid_info().
+ */
+function os2web_core_theme_skinr_skin_grid_info() {
+>>>>>>> 025d57b402ec35acb5e1c64c74bcc20289518774
 
   $skins = array();
 
@@ -55,4 +67,7 @@ function cmstheme_skinr_skin_grid_info() {
   );
   return $skins;
 }
+<<<<<<< HEAD
 ?>
+=======
+>>>>>>> 025d57b402ec35acb5e1c64c74bcc20289518774
